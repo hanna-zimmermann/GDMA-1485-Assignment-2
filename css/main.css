@@ -68,6 +68,7 @@ a {
 }
 
 li {
+	
 	display: inline-block;
 	padding: 2px;
 	margin: 0 auto;
@@ -86,21 +87,44 @@ nav li:last-child a{
   
 }
 
+a, header, header .wrapper div:last-child p:first-of-type{
+	color: #fff;
+}
+li a:hover, nav li:last-child a:hover {
+	color: #000;
+}
+
+nav li:last-child a:hover {
+	background-color: #fff;
+}
+
+/* -- TYPE-- */ 
+
 header p:first-of-type span {
 	font-size: 45px;
 	font-weight: 100;
 	text-transform: lowercase;
 	font-style: italic;
 	font-family: 'EB Garamond', serif;
+	
 }
 
 header p:first-of-type {
 	font-size: 90px;
 }
 
-header p:first-of-type, a{
+header p:first-of-type, a, h2{
 	text-transform: uppercase;
 }
+
+
+h2, thead tr{
+	font-size: 10px;
+	font-weight: 300;
+	color: #BDBDBD;
+	margin-top: 30px;
+}
+
 
 /*--------------------------------------------------------------
 5.0 - OBJECTS
@@ -121,20 +145,34 @@ header p:first-of-type, a{
 6.0 - COMPONENTS
 -------------------------------------------------------------- */
 
-/* -- HEADER -- */ 
+/* -- FLOATS -- */ 
 
 
-#logo, #about{
+#logo, #about, #col-1-3, #col-1-2, #col-1-1-3 {
 	float: left;
 }
 
-#take-action, nav{
+#take-action, nav, #col-2-3, #col-2-2, #col-1-3-3 {
 	float: right;
 }
 
 #logo, nav {
 	width: 300px;
 }
+
+#col-1-3, #col-2-3 {
+	width: 780px;
+}
+
+#col-1-2, #col-2-2 {
+	width: 390px;
+}
+
+#col-1-1-3, #col-1-2-3, #col-1-3-3 {
+	width: 370px;
+}
+
+/* -- HEADER -- */ 
 
 
 header, #about header, #take-action header, #about p, #take-action p, header .wrapper div:last-child, #lead, #col-center, footer {
@@ -148,6 +186,12 @@ header, #about header, #take-action header, #about p, #take-action p, header .wr
 }
 
 
+#about, #take-action{
+	width: 550px;
+}
+
+/* -- TYPE -- */
+
 #lead {
 	margin-top: 60px;
 	font: 30px 'EB Garamond', serif;
@@ -159,17 +203,11 @@ header, #about header, #take-action header, #about p, #take-action p, header .wr
 	margin-bottom: 60px;
 }
 
-#col-center p:last-of-type, #col-center span{
-	font: 400 'EB Garamond', serif;
+#col-center p:last-of-type, #col-center span a {
+	font: 400 italic 'EB Garamond', serif;
 	font-style: italic;
+	text-transform: none;
 }
-
-
-#about, #take-action{
-	width: 550px;
-	
-}
-
 
 
 /* -- SPRITE -- */ 
@@ -210,7 +248,7 @@ header, #about header, #take-action header, #about p, #take-action p, header .wr
 /* -- BACKGROUND -- */ 
 
 #bg-image-hero {
-	background: url(../img/hero.jpeg) no-repeat center center scroll;
+	background: url(../img/img-hero.jpeg) no-repeat center center scroll;
 	-webkit-background-size: cover;
     -ms-background-size: cover;
     -o-background-size: cover;
@@ -218,6 +256,29 @@ header, #about header, #take-action header, #about p, #take-action p, header .wr
 	background-size: cover;
 	height: 615px;
 	background-position: 0 -275px;
+}
+
+#bg-image-about {
+	background: url(../img/img-about.jpeg) no-repeat center center scroll;
+	-webkit-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+	background-size: cover;
+	height: 460px;
+	background-position: 0px -200px;
+	
+}
+
+#bg-image-take-action {
+	background: url("../img/img-take-action.jpg") no-repeat center center scroll;
+	-webkit-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+	background-size: cover;
+	height: 460px;
+	background-position: 0 -280px;
 }
 
 /* -- BUTTON -- */ 
@@ -232,39 +293,58 @@ header, #about header, #take-action header, #about p, #take-action p, header .wr
 	
 }
 
-
-/* -- COLOR -- */ 
-
-
-a, header, header .wrapper div:last-child p:first-of-type{
-	color: #fff;
-}
-li a:hover, nav li:last-child a:hover {
-	color: #000;
+.bnt-green:hover {
+	background-color: #002E2A;
 }
 
-nav li:last-child a:hover {
-	background-color: #fff;
-}
+
+/* -- FOOTER -- */ 
 
 footer {
 	background-color: #2A938C;
 	padding-top: 5px;
 }
 
-footer a:hover {
-	color: #002E2A
+footer a:hover, #col-center span a:hover {
+	color: #002E2A;
 }
 
-.bnt-green:hover {
-	background-color: #002E2A;
+#bg-black li a{
+	padding: 30px;
+	
 }
 
-#col-center span {
+#bg-black li a {
+	font-weight: 300;
+	letter-spacing: 4px;
+	font-size: 14px;
+}
+#col-center span, #col-center span a{
 	color: #2A938C;
 }
 
 #bg-black {
 	background-color: #000;
-	
+}
+
+/* -- TABLE -- */
+
+caption {
+	display: none;
+}
+
+table {
+	margin-top: 90px;
+	border-collapse: collapse;
+}
+
+td {
+	width: 300px;
+	padding: 0 10px;
+	font-size: 10px;
+	color: #55636D;
+}
+
+tr:nth-child(2),tr:nth-child(4){
+	background-color: #F2F2F2;
 }
