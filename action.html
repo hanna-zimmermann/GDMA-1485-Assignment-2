@@ -6,13 +6,13 @@
 	
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">	
 	<link rel="stylesheet" type="text/css" href="css/main.css">	
-	<link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i|Montserrat:400,400i,500,500i,600,600i,700,700i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,600,600i|Montserrat:400,400i,600,600i|Source+Sans+Pro&display=swap" rel="stylesheet">
 	
 </head>
 
 <body>
 	
-	<header id="bg-image-take-action">
+	<header id="bg-take-action">
 		<div class="wrapper">
 			<div class="row">
 				<div id="logo">
@@ -31,26 +31,77 @@
 	</header>
 	
 	<div class="wrapper">
-		<p>You can make a difference. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus scelerisque enim non augue fringilla, sit amet vehicula orci faucibus. </p>
+		<p id="lead">You can make a difference. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus scelerisque enim non augue fringilla, sit amet vehicula orci faucibus.</p>
 		<div class="row">
 			<div id="col-1-1-3">
-				<p> header?</p>
-				<p> paragrph</p>
-				<p> button </p>
+				<h2> Donate</h2>
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus scelerisque enim non augue fringilla, sit amet vehicula orci faucibus. </p>
+				<p class="btn-green"><a href="#">make a dontation</a> </p>
 			</div>
 			<div id="col-1-2-3">
-				<p> header?</p>
-				<p> paragrph</p>
-				<p> button </p>
+				<h2> Spread the Word</h2>
+				<p> Maecenas luctus erat lobortis neque molestie, in scelerisque arcu sollicitudin.</p>
+				<p class="btn-green"><a href="#">Share on Social Media</a></p>
 			</div>
 			<div id="col-1-3-3">
-				<p> header?</p>
-				<p> paragrph</p>
-				<p> button </p>
+				<h2> Voulunteer</h2>
+				<p>  Donec blandit, arcu a dapibus iaculis, velit nisi luctus libero, eu maximus ligula diam eget ante. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
+				<p class="btn-green"><a href="#">Join the Foundation</a></p>
 			</div>
 		</div>
 	</div>
 	
+	<section>
+		<form class="wrapper">
+			<fieldset>
+				<header>
+					<h2>Sign up to volunteer!</h2>
+				</header>
+				<div class="row">
+					<div>
+						<label for="first-name"></label>
+						<input type="text" name="first-name" id="first-name" placeholder="first name">
+					</div>
+				<div>
+					<label for="last-name"></label>
+					<input type="text" name="last-name" id="last-name" placeholder="last name">
+				</div>	
+				</div>
+				<div>
+					<label for="email"></label>
+					<input type="email" name="email" id="email" placeholder="email address">	
+				</div>
+				<div>
+					<label>I would like to get involved with: </label> <!-- what are these options supposed to be>? -->
+					<select name="involved" id="involved">
+							<option value="Basic">Basic</option> 
+							<option value="Pro">Pro</option>
+							<option value="Expert">Expert</option>
+					</select>
+				</div>
+			</fieldset>
+		</form>
+		<footer>
+			<div class="wrapper">
+				<ul id="sprite">
+					<li><a href="http://www.facebook.com" target="_blank"><span>Facebook</span></a></li>
+					<li><a href="https://identity.flickr.com/sign-up" target="_blank"><span>Fliker</span></a></li>
+					<li><a href="http://www.twitter.com" target="_blank"><span>Twitter</span></a></li>
+				</ul>
+			</div>
+			<div id="bg-black">
+				<div class="wrapper">
+					<address>
+						<ul>
+							<li><a href="https://www.google.com/maps/place/459+Broadway,+New+York,+NY+10013/@40.7208592,-74.00315,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2598bd3fc4031:0x48b829f544b1ce3f!8m2!3d40.7208592!4d-74.0009613" target="_blank">459 broadway, new york</a></li>
+							<li><a href="tel:1+(212)5550123" target="_blank">(212)555-0123</a></li>
+							<li><a href="mailto:template@gmail.com" target="_blank" >template@gmail.com</a></li>
+						</ul>
+					</address>
+				</div>
+			</div>
+	</footer>
+	</section>
 	
 </body>
 </html>
